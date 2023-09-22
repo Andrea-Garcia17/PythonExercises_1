@@ -1,0 +1,15 @@
+[12] import numpy as np
+     a= np.random.randint(1,100)
+     guess = int(input("Give me a number - "))
+
+     while guess != a:
+       if guess < a:
+         print("Its higher. Try again")
+         guess = int(input("Give me a number -"))
+      if guess > a:
+        print("Its lower. Try again")
+        guess = int(input("Give me a number - "))
+
+if guess== a:
+  print("You did it! The number is " + str(guess))
+  
